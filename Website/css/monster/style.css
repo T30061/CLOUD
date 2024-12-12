@@ -1,0 +1,68 @@
+body {
+    color: #343a40;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; 
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 160px;
+    height: 70px;
+}
+
+.Title {
+    color: black;
+    text-align: center;
+    font-family: "teko", sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+    text-transform: uppercase;
+    line-height: 10px;
+    animation: fadeIn 5s forwards;  
+    text-shadow: 0 0 10px #00e600, 0 0 20px #00e600, 0 0 30px #00e600, 0 0 40px #00e600, 0 0 50px #00e600, 0 0 60px #00e600;
+    margin-right: 10px;
+}
+
+.Title2 {
+    color: black;
+    text-align: center;
+    font-family: "teko", sans-serif;
+    font-weight: 800;
+    font-size: 9rem;
+    text-transform: uppercase;
+    line-height: 10px;
+    animation: fadeIn 5s forwards;  
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}       
