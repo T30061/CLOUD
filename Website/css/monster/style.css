@@ -7,62 +7,160 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row; 
+    flex-direction: row;
+    text-align: center;
+    margin-top: 20px;
 }
+
 .logo {
     position: absolute;
     top: 10px;
     left: 10px;
     width: 160px;
     height: 70px;
+    border-radius: 20px; 
+    box-shadow: 0 0 10px rgba(8, 253, 0, 0.7), 0 0 20px rgba(8, 253, 0, 0.7), 0 0 30px rgba(8, 253, 0, 0.7);
+    transition: box-shadow 0.3s ease;
+}
+
+.logo:hover{
+    box-shadow:  0 0 50px rgba(8, 253, 0, 0.7),0 0 60px rgba(8, 253, 0, 0.7),0 0 70px rgba(8, 253, 0, 0.7);
+}
+
+.Title, .Title2, .sortTitle {
+    font-family: "teko", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 10px;
+    animation: fadeIn 5s forwards;
+    text-align: center;
 }
 
 .Title {
     color: black;
-    text-align: center;
-    font-family: "teko", sans-serif;
-    font-weight: 800;
     font-size: 5rem;
-    text-transform: uppercase;
-    line-height: 10px;
-    animation: fadeIn 5s forwards;  
     text-shadow: 0 0 10px #00e600, 0 0 20px #00e600, 0 0 30px #00e600, 0 0 40px #00e600, 0 0 50px #00e600, 0 0 60px #00e600;
     margin-right: 10px;
+    transition: text-shadow 0.3s ease;
+}
+
+.Title:hover{
+    text-shadow:  0 0 50px rgba(8, 253, 0, 0.7),0 0 60px rgba(8, 253, 0, 0.7),0 0 70px rgba(8, 253, 0, 0.7);
 }
 
 .Title2 {
     color: black;
-    text-align: center;
-    font-family: "teko", sans-serif;
-    font-weight: 800;
-    font-size: 9rem;
-    text-transform: uppercase;
-    line-height: 10px;
-    animation: fadeIn 5s forwards;  
-    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000;
+    font-size: 10rem;
+    text-shadow: 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000;
+}
+
+.sortTitle {
+    font-size: 2rem;
+    text-shadow: 0 0 10px #00e600, 0 0 20px #00e600, 0 0 30px #00e600, 0 0 40px #00e600, 0 0 50px #00e600;
+    margin-left: 120px;
+}
+
+.can, .can:hover {
+    animation: fadeIn 5s forwards;
+    margin: 10px;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .slick-track {
     position: relative;
-    top: 0;
-    left: 0;
-    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .slick-slide {
     display: none;
-    float: left;
     height: 100%;
-    min-height: 1px;
-}       
+}
+
+
+.monster-info {
+    display: flex; 
+    align-content: center;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    margin-top: 20px;
+}
+
+.info-box {
+    width: 300px;
+    padding: 40px;
+    margin-left: 60px;
+    margin-top: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    font-family: "teko", sans-serif;
+    text-shadow: 0 0 10px rgba(8, 253, 0, 0.7), 0 0 20px rgba(8, 253, 0, 0.7), 0 0 30px rgba(8, 253, 0, 0.7), 0 0 40px rgba(8, 253, 0, 0.7);
+    background-color: black;
+    box-shadow: 0 0 10px rgba(8, 253, 0, 0.7), 0 0 20px rgba(8, 253, 0, 0.7), 0 0 30px rgba(8, 253, 0, 0.7);
+    transition: box-shadow 0.3s ease;
+}
+
+.info-box:hover{
+    text-shadow: 0 0 10px rgba(8, 253, 0, 0.7), 0 0 20px rgba(8, 253, 0, 0.7), 0 0 30px rgba(8, 253, 0, 0.7), 0 0 40px rgba(8, 253, 0, 0.7), 0 0 50px rgba(8, 253, 0, 0.7);
+    box-shadow:  0 0 50px rgba(8, 253, 0, 0.7),0 0 60px rgba(8, 253, 0, 0.7),0 0 70px rgba(8, 253, 0, 0.7);
+}
+
+.info-box h2, .info-box p {
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px rgba(8, 253, 0, 0.7), 0 0 20px rgba(8, 253, 0, 0.7), 0 0 30px rgba(8, 253, 0, 0.7);
+}
+
+.can-row {
+    align-content: center;
+    margin-top: 20px;
+    display: inline-block; 
+    padding: 10px; 
+    border: 5px solid #333; 
+    border-radius: 15px; 
+    box-shadow: 0 0 10px rgba(8, 253, 0, 0.7), 0 0 20px rgba(8, 253, 0, 0.7), 0 0 30px rgba(8, 253, 0, 0.7);
+    transition: box-shadow 0.3s ease;
+}
+
+.can-row:hover{
+    box-shadow:  0 0 50px rgba(8, 253, 0, 0.7),0 0 60px rgba(8, 253, 0, 0.7),0 0 70px rgba(8, 253, 0, 0.7);
+}
+
+.glowing-listbox {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid black;
+    background-color: #333;
+    color: #00e600;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(8, 253, 0, 0.7), 0 0 20px rgba(8, 253, 0, 0.7), 0 0 30px rgba(8, 253, 0, 0.7);
+    transition: box-shadow 0.3s ease;
+}
+
+.glowing-listbox:hover {
+    box-shadow:  0 0 50px rgba(8, 253, 0, 0.7),0 0 60px rgba(8, 253, 0, 0.7),0 0 70px rgba(8, 253, 0, 0.7);
+}
